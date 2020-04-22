@@ -1,0 +1,75 @@
+table{
+    border: 1px solid black;
+    border-spacing: 0;
+    margin-bottom: 5px;
+}
+    table td{    
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+
+ }
+
+button{
+    width: 100px;
+    height: 30px;
+    font-size: 10pt;
+    border: none;
+    margin: 1px;
+    cursor: pointer;
+}
+#newGameButton{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#startButton{
+        border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+div.gameBody{
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+@media (max-width: 500px){
+    table td{    
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin: 0;
+    background: white;
+ }
+
+button{
+    width: 70px;
+    height: 30px;
+    font-size: 8pt;
+}
+div.gameBody{
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+}
+
+
+
+/*
+ Game things 
+*/
+.snake{
+    background: yellow;
+ }
+.snakeFinal{
+    background: red;
+}
+.apple{
+    background: brown;
+    border-radius: 50%;
+}

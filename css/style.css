@@ -1,0 +1,178 @@
+@import url(http://allfont.ru/allfont.css?fonts=roboto-regular);
+@import url(http://allfont.ru/allfont.css?fonts=cyrillicold);
+
+html {
+        background-color: rgba(0, 134, 205, 1);
+        background-image: url("../img/bg-pic.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+        background-attachment: fixed;      
+}
+    
+body{
+    font-family: 'Roboto Regular', arial;
+    background: none;
+}
+
+
+/* --- bottom nav --- */
+.bottom-nav-panel{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    z-index: 100;
+}
+.bottom-nav-panel .side-nav-tab{
+    position: relative;
+    margin: 0 auto;
+    width: 90px;
+    height: 30px;
+    background: rgba(151, 155, 160, 1);
+    vertical-align: middle;
+    font-family: 'CyrillicOld', 'Roboto Regular', arial;
+    font-size: 20px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow:  1px 1px 0px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.bottom-nav-panel.open-panel .panel-body{
+    height: 100px;
+	transition: height ease 1s;
+}
+.bottom-nav-panel .side-nav-tab:before{
+    position: absolute;
+    top: 0;
+    left: -30px;
+    display: block;
+    content: "";
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 30px 30px;
+border-color: transparent transparent rgba(151, 155, 160, 1) transparent;
+   
+}
+
+.bottom-nav-panel .side-nav-tab:after{
+    position: absolute;
+    top: 0;
+    right: -30px;
+    display: block;
+    content: "";
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 30px 0 0 30px;
+border-color: transparent transparent transparent rgba(151, 155, 160, 1);
+}
+.bottom-nav-panel .panel-body{
+    background: rgba(151, 155, 160, 1);
+    height: 0;
+		transition: height ease 1s;
+        box-shadow: 0 -5px 11px rgba(0, 0, 0, 0.8);
+	overflow: hidden;
+	padding: 2px;
+}
+.bottom-nav-panel .panel-body .row{
+    margin-top: 10px;
+}
+img{
+	max-height: 80px;
+	max-width: 200px;
+}
+
+/*--- main display area -----*/
+.workplace{
+    background: transparent;
+    margin: 80px auto 0;
+}
+
+/* ---  display name --- */
+.workplace .display-name p{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'CyrillicOld', 'Roboto Regular', arial;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: #34D800;
+    
+}
+
+.workplace .display-name p:before{
+        position: absolute;
+        top: 0;
+        left: -30px;
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 30px 30px;
+        border-color: transparent transparent #34D800 transparent;
+    }
+
+.workplace .display-name p:after{
+        position: absolute;
+        top: 0;
+        right: -30px;
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 30px 30px 0 0;
+        border-color: #34D800 transparent transparent transparent;
+    }
+/*-------   Work Screen --------*/
+.display-screen{
+    padding: 5px;
+    width: 100%;
+    height: 450px;
+    background: #61D89F;
+    border: 4px solid #34D800;
+    overflow-y: auto;
+}
+.play-space{
+    position: relative;
+    height: 430px;
+    padding: 5px;
+}
+.buttons-space{
+    margin: 300px 0 0;
+}
+.buttons-right{
+    text-align: right;
+}
+.play-space{
+    border: 1px solid #00733C;    
+}
+/* ---- arrows --- */
+   svg{
+           width: 50px;
+           height: 50px;
+           cursor:pointer;
+       }
+       #but-down{
+           transform: rotate(-180deg);
+       }
+   #but-left{
+           transform: rotate(-90deg);
+       }
+  #but-right{
+           transform: rotate(90deg);
+       }
+    path { 
+        fill: #A63E00;
+        }
+    svg:hover path {
+        fill: #FFA773;}
